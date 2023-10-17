@@ -147,9 +147,9 @@ def main():
                 # キーが押されたら，かつ，キーの種類がスペースキーだったら
                 beam = Beam(bird)
 
-
+        
         screen.blit(bg_img, [0, 0])
-
+        
         if bomb is not None:
             if bird.rct.colliderect(bomb.rct):
                 # ゲームオーバー時に，こうかとん画像を切り替え，1秒間表示させる
